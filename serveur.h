@@ -1,6 +1,6 @@
 #ifndef SERVEUR_H
 #define SERVEUR_H
-
+#define PORT_SERVEUR 8000
 #include <QTcpServer>
 #include <QObject>
 

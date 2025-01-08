@@ -8,7 +8,7 @@ Server::Server(QObject *parent) : QObject(parent)
 
 void Server::demarrer()
 {
-    if (!tcpServer->listen(QHostAddress::Any, 1234)) {
+    if (!tcpServer->listen(QHostAddress::LocalHost, PORT_SERVEUR)) {
         qCritical() << "Unable to start the server:" << tcpServer->errorString();
         return;
     }
